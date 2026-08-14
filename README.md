@@ -5,7 +5,7 @@
 
 | Detail | Information |
 |--------|-------------|
-| **Student Name** | [Lethabo Letshwiti] |
+Student Name: Lethabo Letshwiti |
 | **Student Number** | [ST10482837] |
 | **Group** | [Your Group Number] |
 | **Subject** | Web Development |
@@ -17,17 +17,17 @@
 
 ## Project Overview
 
-This project involves creating a fully functional, multi-page website for a target organisation. The website is designed to be informative, engaging, and user-friendly, serving as a professional online presence for the chosen organisation.
+This project is a complete website with several pages for a target organisation. The internet site needs to be informative, interesting and easy to use and will be their on-line professional face for the selected organisation.
 
-### Target Organisation: [Organisation Name]
+Target Organisation: [Organisation Name]
 
-[Organisation Name] is a [brief description of the organisation - e.g., "leading logistics and mining services provider" or "specialty coffee shop"]. The website aims to:
+[Organisation Name] is a [brief description of the organisation - e.g., "leading logistics and mining services provider" or "specialty coffee shop"]. The intent of the web site is to:
 
-- **Establish a professional online presence**
+Create a professional internet profile
 - **Showcase products/services**
-- **Provide essential information to customers/clients**
-- **Generate enquiries and leads**
-- **Build brand credibility and trust**
+- Give customers/clients information that is needed.
+- Proactively produce inquiries and leads
+Increase brand credibility and trust
 
 ---
 
@@ -37,54 +37,54 @@ This project involves creating a fully functional, multi-page website for a targ
 
 | Goal | Description |
 |------|-------------|
-| **Brand Visibility** | Establish a professional online presence reflecting the organisation's expertise |
-| **Lead Generation** | Attract new clients/customers through the website |
-| **Information Hub** | Provide comprehensive information about products, services, and the organisation |
-| **User Engagement** | Create an interactive experience that encourages user action |
+Create a professional online image showcasing the organisation's expertise |
+Lead Generation – Attracting new clients/customers to the website |
+Information Hub: Give a lot of information about the products or services of the organisation. |
+Interact with users in a way that is likely to lead to user actions. |
 
 ### Key Performance Indicators (KPIs)
 
-- Increase website traffic by 30% within 3 months
-- Generate 10+ enquiries per month through the contact form
-- Achieve a bounce rate under 40%
-- Maintain average session duration above 2 minutes
-- Secure 5+ qualified leads per quarter
+- Drive up to 30% more traffic to the website in 3 months
+- Produce 10+ enquiries each month with contact form
+Have a bounce rate of less than 40%
+- Have a higher average session length than 2 minutes
+Generate 5+ qualified leads per quarter
 
 ---
 
-## Key Features and Functionality
+The key features and functionality are clear.The features and functions are obvious.
 
 ### Pages Included
 
-| Page | File Name | Description |
+You can find the description for each file by going to the corresponding page. |
 |------|-----------|-------------|
-| **Home** | index.html | Main landing page with hero image, introduction, and call-to-action |
-| **About Us** | about.html | Organisation history, mission, vision, values, and team members |
-| **Services/Products** | services.html | Detailed information about products and services offered |
-| **Enquiry** | enquiry.html | Contact form for enquiries, volunteering, or sponsorship |
-| **Contact** | contact.html | Contact information, multiple locations, contact form, and embedded map |
+index.html | Hero image, introduction, and call-to-action on the main landing page. |
+About Us about.html Organisation history, mission, vision, values, team members |
+Services/Products services.html Detailed information about products and services offered |
+Enquiry: enquiry.html - Contact form for Enquiries, Volunteering or Sponsorship |
+contact.html | Contact information, multiple locations, contact form and embedded map |
 
 ### Key Features
 
-✅ **Responsive Navigation** - Consistent navigation across all pages
-✅ **Enquiry Form** - User-friendly form for enquiries and lead generation
-✅ **Contact Information** - Multiple locations with embedded maps
-✅ **Visual Content** - High-quality images throughout the site
-✅ **Social Media Integration** - Links to social media profiles
-✅ **Sitemap** - Clear website structure displayed on the enquiry page
+A consistent navigation across all pages.A consistent navigation throughout all pages.
+The Enquiry Form is a simple, easy-to-use form that allows users to make enquiries and generate leads.
+Multiple Locations (Embedded Maps) - more than one location will be provided with embedded maps.
+Visually appealing content around the website.
+Social Media Integration – links to social media profiles
+Sitemap - Provides a clear structure of the website on the enquiry page.
 
 ---
 
-## Project Timeline and Milestones
+The project can be split into the following phases and milestones:
 
 | Milestone | Duration | Description |
 |-----------|----------|-------------|
-| **Project Planning** | Week 1 | Requirements gathering, sitemap creation, wireframing |
-| **Design Phase** | Weeks 2-3 | High-fidelity mockups, stakeholder review |
-| **Development** | Weeks 4-6 | HTML coding, content integration, testing |
-| **Content Integration** | Week 7 | Populating pages with content and images |
-| **Testing & Deployment** | Week 8 | Cross-browser testing, performance optimization, launch |
-| **Post-Launch Support** | Ongoing | Maintenance, updates, analytics monitoring |
+Project planning | Week 1 | Requirements gathering, creating a Sitemap, wireframing |
+Delivers high fidelity mockups and presents to stakeholders |
+The goal of Development is to create HTML coding, integrate content, and test.The objective of Development is to create HTML coding, integrate content, and test.
+Content Integration | Week 7 | Filling pages with content and pictures.
+Testing & Deployment | Week 8 | Cross Browser Testing, Performance Tuning, Launch |
+Post-Launch Support | Ongoing | Maintenance, updates, analytics monitoring |
 
 ---
 

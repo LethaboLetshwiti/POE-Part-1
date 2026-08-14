@@ -57,11 +57,11 @@ The key features and functionality are clear.The features and functions are obvi
 ### Pages Included
 
 You can find the description for each file by going to the corresponding page.
-index.html | Hero image, introduction, and call-to-action on the main landing page. |
-About Us about.html Organisation history, mission, vision, values, team members |
-Services/Products services.html Detailed information about products and services offered |
-Enquiry: enquiry.html - Contact form for Enquiries, Volunteering or Sponsorship |
-contact.html | Contact information, multiple locations, contact form and embedded map |
+index.html, Hero image, introduction, and call-to-action on the main landing page.
+About Us about.html Organisation history, mission, vision, values, team members,
+Services/Products services.html Detailed information about products and services offered
+Enquiry: enquiry.html - Contact form for Enquiries, Volunteering or Sponsorship
+contact.html | Contact information, multiple locations, contact form and embedded map.
 
 ### Key Features
 

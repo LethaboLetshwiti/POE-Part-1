@@ -5,10 +5,15 @@ Student Information
 Detail  Information 
 
 **Student Name** Lethabo Letshwiti 
+
 **Student Number** ST10482837
+
 **Subject** Web Development
+
 **Course Code** DITM0601
+
 **Project** Website Project - Part 1, 2 & 3
+
 **Year**  2026 
 
 

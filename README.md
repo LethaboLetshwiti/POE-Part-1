@@ -5,8 +5,8 @@
 
 | Detail | Information |
 |--------|-------------|
-| **Student Name** | [Your Full Name] |
-| **Student Number** | [Your Student Number] |
+| **Student Name** | [Lethabo Letshwiti] |
+| **Student Number** | [ST10482837] |
 | **Group** | [Your Group Number] |
 | **Subject** | Web Development |
 | **Course Code** | [Subject Code] |

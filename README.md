@@ -1,16 +1,15 @@
  POE-Part-1
-🌐 Website Project - Organisation Website
+Website Project - Organisation Website
 Student Information
 
-| Detail | Information |
-|--------|-------------|
-| **Student Name** |Lethabo Letshwiti |
-| **Student Number** | [ST10482837] |
-| **Group** | [Your Group Number] |
-| **Subject** | Web Development |
-| **Course Code** | [DITM0601] |
-| **Project** | Website Project - Part 1, 2 & 3 |
-| **Year** | 2026 |
+Detail  Information 
+
+**Student Name** Lethabo Letshwiti 
+**Student Number** ST10482837
+**Subject** Web Development
+**Course Code** DITM0601
+**Project** Website Project - Part 1, 2 & 3
+**Year**  2026 
 
 
 
@@ -34,12 +33,12 @@ Website Goals and Objectives
 
 Primary Goals
 
-| Goal | Description |
-|------|-------------|
-Create a professional online image showcasing the organisation's expertise |
-Lead Generation – Attracting new clients/customers to the website |
-Information Hub: Give a lot of information about the products or services of the organisation. |
-Interact with users in a way that is likely to lead to user actions. |
+ **Goal  Description** 
+
+Create a professional online image showcasing the organisation's expertise 
+Lead Generation – Attracting new clients/customers to the website 
+Information Hub: Give a lot of information about the products or services of the organisation. 
+Interact with users in a way that is likely to lead to user actions. 
 
 Key Performance Indicators (KPIs)
 
@@ -75,14 +74,14 @@ Sitemap - Provides a clear structure of the website on the enquiry page.
 
 The project can be split into the following phases and milestones:
 
-| Milestone | Duration | Description |
-|-----------|----------|-------------|
-Project planning | Week 1 | Requirements gathering, creating a Sitemap, wireframing |
-Delivers high fidelity mockups and presents to stakeholders |
+ **Milestone**  **Duration**  **Description** 
+
+Project planning  Week 1  Requirements gathering, creating a Sitemap, wireframing 
+Delivers high fidelity mockups and presents to stakeholders 
 The goal of Development is to create HTML coding, integrate content, and test.The objective of Development is to create HTML coding, integrate content, and test.
-Content Integration | Week 7 | Filling pages with content and pictures.
-Testing & Deployment | Week 8 | Cross Browser Testing, Performance Tuning, Launch |
-Post-Launch Support | Ongoing | Maintenance, updates, analytics monitoring |
+Content Integration  Week 7  Filling pages with content and pictures.
+Testing & Deployment Week 8  Cross Browser Testing, Performance Tuning, Launch 
+Post-Launch Support  Ongoing  Maintenance, updates, analytics monitoring 
 
 
 

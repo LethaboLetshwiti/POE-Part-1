@@ -125,6 +125,6 @@ The project can be split into the following phases and milestones:
 
 
 
-Sitemap
+**Sitemap**
 
-Page Hierarchy
+**Page Hierarchy**

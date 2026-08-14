@@ -21,7 +21,7 @@ This project is a complete website with several pages for a target organisation.
 
 Target Organisation: [Organisation Name]
 
-[Organisation Name] is a [brief description of the organisation - e.g., "leading logistics and mining services provider" or "specialty coffee shop"]. The intent of the web site is to:
+[Organisation Name] is a brief description of the organisation - e.g.,leading logistics and mining services provider or specialty coffee shop. The intent of the web site is to:
 
 Create a professional internet profile
 - **Showcase products/services**

@@ -5,11 +5,11 @@
 
 | Detail | Information |
 |--------|-------------|
-Student Name: Lethabo Letshwiti |
+| **Student Name** |Lethabo Letshwiti |
 | **Student Number** | [ST10482837] |
 | **Group** | [Your Group Number] |
 | **Subject** | Web Development |
-| **Course Code** | [Subject Code] |
+| **Course Code** | [DITM0601] |
 | **Project** | Website Project - Part 1, 2 & 3 |
 | **Year** | 2026 |
 
@@ -19,9 +19,9 @@ Student Name: Lethabo Letshwiti |
 
 This project is a complete website with several pages for a target organisation. The internet site needs to be informative, interesting and easy to use and will be their on-line professional face for the selected organisation.
 
-Target Organisation: [Organisation Name]
+Target Organisation: [Mysol holdings & logistics]
 
-[Organisation Name] is a brief description of the organisation - e.g.,leading logistics and mining services provider or specialty coffee shop. The intent of the web site is to:
+[Mysol holdings & logistics] is a brief description of the organisation - e.g.,leading logistics and mining services provider or specialty coffee shop. The intent of the web site is to:
 
 Create a professional internet profile
 - **Showcase products/services**

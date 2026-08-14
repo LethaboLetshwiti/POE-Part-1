@@ -81,11 +81,11 @@ The project can be split into the following phases and milestones:
 
  **Milestone**  **Duration**  **Description** 
 
-Project planning  Week 1  Requirements gathering, creating a Sitemap, wireframing 
+Project planning | Week 1 | Requirements gathering, creating a Sitemap, wireframing 
 Delivers high fidelity mockups and presents to stakeholders 
 The goal of Development is to create HTML coding, integrate content, and test.The objective of Development is to create HTML coding, integrate content, and test.
-Content Integration  Week 7  Filling pages with content and pictures.
-Testing & Deployment Week 8  Cross Browser Testing, Performance Tuning, Launch 
+Content Integration | Week 7 | Filling pages with content and pictures.
+Testing & Deployment | Week 8 | Cross Browser Testing, Performance Tuning, Launch 
 Post-Launch Support  Ongoing  Maintenance, updates, analytics monitoring 
 
 

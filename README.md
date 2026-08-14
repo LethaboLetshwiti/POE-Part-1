@@ -1,6 +1,6 @@
-# POE-Part-1
-# 🌐 Website Project - Organisation Website
-## Student Information
+ POE-Part-1
+🌐 Website Project - Organisation Website
+Student Information
 
 | Detail | Information |
 |--------|-------------|
@@ -30,9 +30,9 @@ Increase brand credibility and trust
 
 
 
-## Website Goals and Objectives
+Website Goals and Objectives
 
-### Primary Goals
+Primary Goals
 
 | Goal | Description |
 |------|-------------|
@@ -41,7 +41,7 @@ Lead Generation – Attracting new clients/customers to the website |
 Information Hub: Give a lot of information about the products or services of the organisation. |
 Interact with users in a way that is likely to lead to user actions. |
 
-### Key Performance Indicators (KPIs)
+Key Performance Indicators (KPIs)
 
 - Drive up to 30% more traffic to the website in 3 months
 - Produce 10+ enquiries each month with contact form
@@ -53,7 +53,7 @@ Generate 5+ qualified leads per quarter
 
 The key features and functionality are clear.The features and functions are obvious.
 
-### Pages Included
+Pages Included
 
 You can find the description for each file by going to the corresponding page.
 index.html, Hero image, introduction, and call-to-action on the main landing page.
@@ -62,7 +62,7 @@ Services/Products services.html Detailed information about products and services
 Enquiry: enquiry.html - Contact form for Enquiries, Volunteering or Sponsorship
 contact.html, Contact information, multiple locations, contact form and embedded map.
 
-### Key Features
+Key Features
 
 A consistent navigation across all pages.A consistent navigation throughout all pages.
 The Enquiry Form is a simple, easy-to-use form that allows users to make enquiries and generate leads.

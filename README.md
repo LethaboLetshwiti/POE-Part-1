@@ -13,7 +13,7 @@
 | **Project** | Website Project - Part 1, 2 & 3 |
 | **Year** | 2026 |
 
----
+
 
 ## Project Overview
 
@@ -29,7 +29,7 @@ Create a professional internet profile
 - Proactively produce inquiries and leads
 Increase brand credibility and trust
 
----
+
 
 ## Website Goals and Objectives
 
@@ -50,7 +50,7 @@ Have a bounce rate of less than 40%
 - Have a higher average session length than 2 minutes
 Generate 5+ qualified leads per quarter
 
----
+
 
 The key features and functionality are clear.The features and functions are obvious.
 
@@ -72,7 +72,7 @@ Visually appealing content around the website.
 Social Media Integration – links to social media profiles
 Sitemap - Provides a clear structure of the website on the enquiry page.
 
----
+
 
 The project can be split into the following phases and milestones:
 
@@ -85,7 +85,7 @@ Content Integration | Week 7 | Filling pages with content and pictures.
 Testing & Deployment | Week 8 | Cross Browser Testing, Performance Tuning, Launch |
 Post-Launch Support | Ongoing | Maintenance, updates, analytics monitoring |
 
----
+
 
 ## Sitemap
 

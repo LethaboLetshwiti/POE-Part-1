@@ -1,0 +1,1047 @@
+/* ============================================================
+   MySol Holdings & Logistics — Unified Stylesheet
+   Combines index.css, about.css, services.css,
+   enquiry.css and contact.css into one file.
+
+   Colour palette:
+     White / Off-white : #ffffff / #f8f9fa
+     Blue              : #0a3d6b / #1a5a8a / #1e7bc4
+     Orange            : #e8751a / #c9600f / #f59e42
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. DESIGN TOKENS
+   ------------------------------------------------------------ */
+:root {
+    --white: #ffffff;
+    --off-white: #f8f9fa;
+    --light-gray: #e9ecef;
+    --blue: #0a3d6b;
+    --blue-light: #1a5a8a;
+    --blue-accent: #1e7bc4;
+    --orange: #e8751a;
+    --orange-dark: #c9600f;
+    --orange-light: #f59e42;
+    --text-dark: #1a1a2e;
+    --text-medium: #4a4a5a;
+    --text-light: #6c757d;
+    --shadow-sm: 0 2px 8px rgba(10, 61, 107, 0.08);
+    --shadow-md: 0 4px 16px rgba(10, 61, 107, 0.12);
+    --shadow-lg: 0 8px 32px rgba(10, 61, 107, 0.18);
+    --radius: 8px;
+    --radius-lg: 12px;
+    --transition: all 0.3s ease;
+}
+
+/* ------------------------------------------------------------
+   2. RESET & BASE
+   ------------------------------------------------------------ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: var(--text-dark);
+    background-color: var(--off-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--blue);
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--orange), var(--orange-light));
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--blue-light);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-medium);
+}
+
+a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--orange-dark);
+}
+
+/* ------------------------------------------------------------
+   3. HEADER & NAVIGATION (shared on every page)
+   ------------------------------------------------------------ */
+header {
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 5%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, var(--blue), var(--orange)) 1;
+}
+
+/* Logo + organisation name container */
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    flex-shrink: 0;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: var(--off-white);
+    padding: 4px;
+    border: 2px solid var(--light-gray);
+}
+
+/* Organisation name rendered as gradient text */
+header > div::after {
+    content: "MySol Holdings & Logistics";
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+    white-space: nowrap;
+    background: linear-gradient(
+        90deg,
+        var(--blue) 0%,
+        var(--blue) 55%,
+        var(--orange) 55%,
+        var(--orange) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Navigation links ---------- */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: var(--radius);
+    position: relative;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 60%;
+    height: 2px;
+    background: var(--orange);
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--orange);
+    background: rgba(232, 117, 26, 0.06);
+}
+
+nav ul li a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+nav ul li a.active {
+    color: var(--orange);
+    background: rgba(232, 117, 26, 0.08);
+}
+
+nav ul li a.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* ------------------------------------------------------------
+   4. MAIN LAYOUT
+   ------------------------------------------------------------ */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5% 3rem;
+}
+
+/* Narrower container used on the Enquiry page */
+main.narrow {
+    max-width: 900px;
+}
+
+/* ------------------------------------------------------------
+   5. SHARED PAGE BANNER (first section inside <main>)
+   ------------------------------------------------------------ */
+main > section:first-of-type {
+    background: linear-gradient(
+        135deg,
+        var(--blue) 0%,
+        var(--blue-light) 55%,
+        var(--blue-accent) 100%
+    );
+    color: var(--white);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    padding: 4rem 2.5rem 3.5rem;
+    margin: 0 -5% 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+/* Decorative pulsing orange glow */
+main > section:first-of-type::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(232, 117, 26, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: pulse 6s ease-in-out infinite;
+}
+
+/* Decorative soft white glow */
+main > section:first-of-type::after {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: -10%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+main > section:first-of-type h1 {
+    color: var(--white);
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+main > section:first-of-type p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: 0 auto 0.5rem;
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+main > section:first-of-type p strong {
+    color: var(--orange-light);
+    font-weight: 700;
+}
+
+/* Taller hero on the Home page */
+body.home main > section:first-of-type {
+    padding: 5rem 2.5rem 4rem;
+}
+
+body.home main > section:first-of-type h1 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+}
+
+body.home main > section:first-of-type p {
+    font-size: 1.25rem;
+    max-width: 700px;
+}
+
+/* ============================================================
+   6. HOME PAGE  (index.html)
+   ============================================================ */
+
+/* "Who We Are" — white card, blue top border */
+body.home main > section:nth-of-type(2) {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--blue);
+    transition: var(--transition);
+}
+
+body.home main > section:nth-of-type(2):hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+body.home main > section:nth-of-type(2) p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* "What We Offer" — orange left border + grid cards */
+body.home main > section:nth-of-type(3) {
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    border-left: 5px solid var(--orange);
+    transition: var(--transition);
+}
+
+body.home main > section:nth-of-type(3):hover {
+    box-shadow: var(--shadow-md);
+}
+
+body.home main > section:nth-of-type(3) ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+body.home main > section:nth-of-type(3) ul li {
+    background: var(--white);
+    padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+    border-radius: var(--radius);
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    font-weight: 600;
+    color: var(--blue);
+    transition: var(--transition);
+    border: 1px solid var(--light-gray);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+body.home main > section:nth-of-type(3) ul li::before {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, var(--orange), var(--orange-light));
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(232, 117, 26, 0.15);
+    transition: var(--transition);
+}
+
+body.home main > section:nth-of-type(3) ul li:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+body.home main > section:nth-of-type(3) ul li:hover::before {
+    box-shadow: 0 0 0 6px rgba(232, 117, 26, 0.2);
+    transform: translateY(-50%) scale(1.15);
+}
+
+/* "Get Involved" CTA — orange gradient panel */
+body.home main > section:nth-of-type(4) {
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 3rem 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(232, 117, 26, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+body.home main > section:nth-of-type(4)::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+body.home main > section:nth-of-type(4) h2 {
+    color: var(--white);
+    font-size: 1.9rem;
+    margin-bottom: 0.75rem;
+}
+
+body.home main > section:nth-of-type(4) h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--white);
+}
+
+body.home main > section:nth-of-type(4) p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.15rem;
+    margin-bottom: 1.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+body.home main > section:nth-of-type(4) a[href="enquiry.html"] {
+    display: inline-block;
+    background: var(--white);
+    color: var(--orange-dark);
+    padding: 1rem 2.75rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+body.home main > section:nth-of-type(4) a[href="enquiry.html"]:hover {
+    background: var(--blue);
+    color: var(--white);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================
+   7. ABOUT PAGE  (about.html)
+   ============================================================ */
+
+/* "Our History" — blue left border with orange dot marker */
+body.about main > section:nth-of-type(2) {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 3rem 2.5rem 3.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    border-left: 6px solid var(--blue);
+    transition: var(--transition);
+    position: relative;
+}
+
+body.about main > section:nth-of-type(2)::before {
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    left: -11px;
+    width: 16px;
+    height: 16px;
+    background: var(--orange);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--white), 0 0 0 6px var(--orange-light);
+}
+
+body.about main > section:nth-of-type(2):hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+body.about main > section:nth-of-type(2) p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* "Mission & Vision" — pill labels */
+body.about main > section:nth-of-type(3) {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+body.about main > section:nth-of-type(3):hover {
+    box-shadow: var(--shadow-md);
+}
+
+body.about main > section:nth-of-type(3) h3 {
+    display: inline-block;
+    padding: 0.55rem 1.35rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--white);
+    margin-top: 1.25rem;
+    margin-bottom: 0.85rem;
+    font-weight: 700;
+}
+
+body.about main > section:nth-of-type(3) h3:first-of-type {
+    margin-top: 0;
+    background: linear-gradient(135deg, var(--blue), var(--blue-accent));
+    box-shadow: 0 4px 12px rgba(10, 61, 107, 0.28);
+}
+
+body.about main > section:nth-of-type(3) h3:last-of-type {
+    background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+    box-shadow: 0 4px 12px rgba(232, 117, 26, 0.3);
+}
+
+body.about main > section:nth-of-type(3) p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    padding-left: 1rem;
+    border-left: 3px solid var(--light-gray);
+}
+
+/* "Core Values" — card grid */
+body.about main > section:nth-of-type(4) {
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--orange);
+}
+
+body.about main > section:nth-of-type(4) ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+body.about main > section:nth-of-type(4) ul li {
+    background: var(--white);
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--radius);
+    border: 2px solid var(--light-gray);
+    text-align: center;
+    transition: var(--transition);
+    font-weight: 600;
+    color: var(--blue);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+body.about main > section:nth-of-type(4) ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--orange), var(--orange-light));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+body.about main > section:nth-of-type(4) ul li:hover {
+    transform: translateY(-4px);
+    border-color: var(--orange);
+    box-shadow: var(--shadow-md);
+    color: var(--orange);
+}
+
+body.about main > section:nth-of-type(4) ul li:hover::before {
+    transform: scaleX(1);
+}
+
+body.about main > section:nth-of-type(4) ul li strong {
+    display: block;
+    color: var(--orange);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+body.about main > section:nth-of-type(4) ul li:hover strong {
+    color: var(--blue);
+}
+
+/* "Meet Our Team" — profile cards */
+body.about main > section:nth-of-type(5) {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.team-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    border-left: 5px solid var(--orange);
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(232, 117, 26, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(30%, -30%);
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateX(6px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--blue);
+}
+
+.team-card:hover::before {
+    background: radial-gradient(circle, rgba(30, 123, 196, 0.12) 0%, transparent 70%);
+    transform: translate(20%, -20%) scale(1.3);
+}
+
+.team-photo {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--blue), var(--blue-accent));
+    box-shadow: 0 6px 18px rgba(10, 61, 107, 0.2);
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--white);
+    display: block;
+    background: var(--light-gray);
+}
+
+.team-card:hover .team-photo {
+    background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+    box-shadow: 0 8px 24px rgba(232, 117, 26, 0.35);
+    transform: scale(1.05);
+}
+
+.team-info {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.team-info h3 {
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    transition: var(--transition);
+}
+
+.team-card:hover .team-info h3 {
+    color: var(--orange);
+}
+
+.team-info p:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.team-info p strong {
+    color: var(--orange);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+
+.team-info p:last-child {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+/* ============================================================
+   8. SERVICES PAGE  (services.html)
+   ============================================================ */
+
+/* Three service cards laid out as a responsive grid */
+body.services main > section:nth-of-type(2),
+body.services main > section:nth-of-type(3),
+body.services main > section:nth-of-type(4) {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.333% - 1.34rem);
+    margin: 0 1rem 2rem 0;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.75rem;
+    box-shadow: var(--shadow-sm);
+    border-top: 5px solid var(--blue);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    min-height: 280px;
+}
+
+body.services main > section:nth-of-type(4) {
+    margin-right: 0;
+}
+
+/* Orange corner glow */
+body.services main > section:nth-of-type(2)::before,
+body.services main > section:nth-of-type(3)::before,
+body.services main > section:nth-of-type(4)::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(232, 117, 26, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+body.services main > section:nth-of-type(2):hover,
+body.services main > section:nth-of-type(3):hover,
+body.services main > section:nth-of-type(4):hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-top-color: var(--orange);
+}
+
+body.services main > section:nth-of-type(2):hover::before,
+body.services main > section:nth-of-type(3):hover::before,
+body.services main > section:nth-of-type(4):hover::before {
+    transform: scale(1.5);
+    background: radial-gradient(circle, rgba(232, 117, 26, 0.2) 0%, transparent 70%);
+}
+
+body.services main > section:nth-of-type(2) h2,
+body.services main > section:nth-of-type(3) h2,
+body.services main > section:nth-of-type(4) h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.75rem;
+    color: var(--blue);
+    transition: var(--transition);
+}
+
+body.services main > section:nth-of-type(2) h2::after,
+body.services main > section:nth-of-type(3) h2::after,
+body.services main > section:nth-of-type(4) h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body.services main > section:nth-of-type(2):hover h2,
+body.services main > section:nth-of-type(3):hover h2,
+body.services main > section:nth-of-type(4):hover h2 {
+    color: var(--orange);
+}
+
+body.services main > section:nth-of-type(2) p,
+body.services main > section:nth-of-type(3) p,
+body.services main > section:nth-of-type(4) p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+body.services main > section:nth-of-type(2) p strong,
+body.services main > section:nth-of-type(3) p strong,
+body.services main > section:nth-of-type(4) p strong {
+    display: block;
+    color: var(--orange);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.35rem;
+    font-weight: 700;
+}
+
+/* Enquire Now buttons */
+body.services main > section:nth-of-type(2) a[href="enquiry.html"],
+body.services main > section:nth-of-type(3) a[href="enquiry.html"],
+body.services main > section:nth-of-type(4) a[href="enquiry.html"] {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, var(--blue), var(--blue-accent));
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(10, 61, 107, 0.25);
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+}
+
+body.services main > section:nth-of-type(2) a[href="enquiry.html"]:hover,
+body.services main > section:nth-of-type(3) a[href="enquiry.html"]:hover,
+body.services main > section:nth-of-type(4) a[href="enquiry.html"]:hover {
+    background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(232, 117, 26, 0.4);
+}
+
+/* "Why Choose Us" — full-width blue gradient panel */
+body.services main > section:nth-of-type(5) {
+    display: block;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 3rem 2.5rem;
+    box-shadow: var(--shadow-lg);
+    border-top: none;
+    position: relative;
+    overflow: hidden;
+}
+
+body.services main > section:nth-of-type(5)::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(232, 117, 26, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+body.services main > section:nth-of-type(5) h2 {
+    color: var(--white);
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+body.services main > section:nth-of-type(5) h2::after {
+    background: var(--orange);
+}
+
+body.services main > section:nth-of-type(5) ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+body.services main > section:nth-of-type(5) ul li {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1.5rem 1.5rem 1.5rem 3.25rem;
+    border-radius: var(--radius);
+    position: relative;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body.services main > section:nth-of-type(5) ul li::before {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    top: 1.75rem;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, var(--orange), var(--orange-light));
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(232, 117, 26, 0.2);
+    transition: var(--transition);
+}
+
+body.services main > section:nth-of-type(5) ul li:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+    border-color: rgba(232, 117, 26, 0.5);
+}
+
+body.services main > section:nth-of-type(5) ul li:hover::before {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 6px rgba(232, 117, 26, 0.3);
+}
+
+body.services main > section:nth-of-type(5) ul li strong {
+    color: var(--orange-light);
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+/* ============================================================
+   9. ENQUIRY PAGE  (enquiry.html)
+   ============================================================ */
+
+body.enquiry main {
+    max-width: 900px;
+}
+
+/* Enquiry form card */
+body.enquiry main > section:nth-of-type(2) {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-md);
+    border-top: 5px solid var(--orange);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+body.enquiry main > section:nth-of-type(2)::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, rgba(232, 117, 26, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Fieldsets with pill-shaped legends */
+fieldset {
+    border: 2px solid var(--light-gray);
+    border-radius: var(--radius);
+    padding: 1.75rem 1.75rem 1.5rem;
+    margin-bottom: 1.75rem;
+    background: linear-gradient(135deg, var(--off-white), var(--white));
+    transition: var(--transition);
+    position: relative;
+}
+
+fieldset:hover {
+    border-color: var(--blue-accent);
+    box-shadow: 0 4px 16px rgba(10, 61, 107, 0.08);
+}
+
+legend {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 0.5rem 1.25rem;
+    background: linear-gradient(135deg, var(--blue), var(--blue-ac

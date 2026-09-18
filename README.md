@@ -128,3 +128,14 @@ The project can be split into the following phases and milestones:
 **Sitemap**
 
 **Page Hierarchy**
+Part 2
+
+
+Page	File	Stylesheet	Purpose
+Home	index.html	CSS/index.css	Hero banner, "Who We Are", "What We Offer", "Get Involved" CTA
+About Us	about.html	CSS/about.css	History, Mission & Vision, Core Values, Meet the Team
+Services	services.html	CSS/services.css	Plant Hire, Logistics & Transport, Open Cast Mining, "Why Choose Us"
+Enquiry	enquiry.html	CSS/enquiry.css	Personal information + enquiry details form
+Contact	contact.html	CSS/contact.css	Two office locations with maps, contact form, social links
+
+

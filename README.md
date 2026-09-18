@@ -138,4 +138,6 @@ Services	services.html	CSS/services.css	Plant Hire, Logistics & Transport, Open 
 Enquiry	enquiry.html	CSS/enquiry.css	Personal information + enquiry details form
 Contact	contact.html	CSS/contact.css	Two office locations with maps, contact form, social links
 
+MySol Holdings & Logistics is a South African open cast and bulk mining contractor established in 2018, and this project delivers a professional, responsive 5-page website (Home, About Us, Services, Enquiry, and Contact) built with semantic HTML5 and modern CSS3. The site uses a unified brand identity of white, blue (#0a3d6b), and orange (#e8751a) to convey trust, professionalism, and energy, with a sticky gradient header, animated navigation, hoverable service and team cards, focus-glow form inputs, embedded Google Maps, and full mobile responsiveness across 992px, 768px, and 480px breakpoints. Each page has one stylesheet (index.css, about.css, services.css, enquiry.css, contact.css) alongside an optional unified style.css, and the project aims to enhance brand visibility, attract new mining clients, showcase social impact, and generate 10+ qualified business inquiries per month while maintaining a bounce rate under 40% and time-on-site over 2 minutes.
+
 
